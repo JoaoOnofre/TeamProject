@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <title>Joao Nuno - Eval 2 - WebForce3</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <h1 class="navbar-brand">OhMyCats !</h1>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="jumbotron">
+      <h2 class="text-center">Adoptez un chat trop bon !</h2>
+    </div>
+
+  </header>
+
+  <main>
+    <section id="formslide" class="container">
+
+      <div class="row">
+        <div class="col-xs-12 col-sm-8 col-sm-push-4">
+
+          <!-- Carousel -->
+          <div id="carousel" class="carousel slide" data-ride="carousel">
+
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+              <li data-target="#carousel" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel" data-slide-to="1"></li>
+              <li data-target="#carousel" data-slide-to="2"></li>
+              <li data-target="#carousel" data-slide-to="3"></li>
+              <li data-target="#carousel" data-slide-to="4"></li>
+            </ul>
+
+            <!-- Slides -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images\chat_1.jpg" class="img-responsive" alt="chat1">
+                <div class="carousel-caption">
+                  <h3>Sushi</h3>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images\chat_2.jpg" class="img-responsive" alt="chat2">
+                <div class="carousel-caption">
+                  <h3>Maki</h3>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images\chat_3.jpg" class="img-responsive" alt="chat3">
+                <div class="carousel-caption">
+                  <h3>Sashimi</h3>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images\chat_4.jpg" class="img-responsive" alt="chat4">
+                <div class="carousel-caption">
+                  <h3>Yakitori</h3>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images\chat_5.jpg" class="img-responsive" alt="chat5">
+                <div class="carousel-caption">
+                  <h3>Onigri</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Control Arrows -->
+            <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+            <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Form Action -->
+        <div id="form" class="col-xs-12 col-sm-4 col-sm-pull-8">
+          <h2 class="text-center">Les chats à adopter</h2>
+          <form id="cat-form">
+            <div class="form-group">
+              <label for="exampleInputEmail1">Choix du chat</label>
+              <select class="form-control" name="choixChat" id="choixChat" required oninvalid="invalid()">
+              <option value="" disabled selected>Choississez le chat à adopter</option>
+              <option value="sushi">Sushi</option>
+              <option value="Maki">Maki</option>
+              <option value="Sashimi">Sashimi</option>
+              <option value="Yakitori">Yakitori</option>
+              <option value="Onigri">Onigri</option>
+            </select>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Raison d'adoption</label>
+              <textarea class="form-control" rows="3" placeholder="Saisissez ici les raisons pour lesquelles vous souhaitez adopter ce chat..." id="raisonChat"></textarea validate required pattern=".{0}|.{8,}">
+          </div>
+          <button type="submit" class="btn btn-success btn-block">Envoyer</button>
+        </form>
+        <div id="success" class="panel panel-default">
+          <p class="text-success text-center">Votre message a bien été envoyé. Merci de votre choix!</p>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+<!-- Content section -->
+  <section id="content">
+    <div class="container">
+
+      <div class="col-xs-12 col-sm-9">
+        <h2>Nos chats à adopter</h2>
+        <p>Sed quid est quod in hac causa maxime homines admirentur et reprehendant meum consilium, cum ego idem antea multa decreverim, que magis ad hominis dignitatem quam ad rei publicae necessitatem pertinerent? Supplicationem quindecim dierum decrevi sententia mea. Rei publicae satis erat tot dierum quot C. Mario ; dis immortalibus non erat exigua eadem gratulatio quae ex maximis bellis. Ergo ille cumulus dierum hominis est dignitati tributus.</p>
+
+        <p>Haec igitur prima lex amicitiae sanciatur, ut ab amicis honesta petamus, amicorum causa honesta faciamus, ne exspectemus quidem, dum rogemur; studium semper adsit, cunctatio absit; consilium vero dare audeamus libere. Plurimum in amicitia amicorum bene suadentium valeat auctoritas, eaque et adhibeatur ad monendum non modo aperte sed etiam acriter, si res postulabit, et adhibitae pareatur.</p>
+      </div>
+
+      <div class="col-xs-10 col-sm-3">
+        <img class="chat" src="images/tete-chat.png" class="img-responsive" alt="tête de chat">
+      </div>
+
+
+    </div>
+  </section>
+<!-- END Content section -->
+
+</main>
+
+<footer>
+  <div class="container">
+    <p class="text-right">© OhMyCats !</p>
+  </div>
+</footer>
+
+<!-- My external javascript file -->
+<script src="js/javascript.js"></script>
+</body>
+
+</html>
